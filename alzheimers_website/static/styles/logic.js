@@ -23,7 +23,7 @@ var baseMaps ={
 };
 myMap
 // An array containing each city's name, location, and population
-let cities = [{
+let map = [{
   location: [],
   name: "Abilene",
   population: 8550405
