@@ -1,22 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Alzheimer's Information</title>
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin="" />
-
-  <link rel="stylesheet" href= "http://127.0.0.1:5500/alzheimers_website/static/styles/styles.css">
-  <!--<script type='text/javascript' src="{{url_for('static', filename='styles/logic2.js')}}"></script>-->
+<html>
+<<head>
+  <link rel="stylesheet" type= "text/css"  href= "{{ url_for('static',filename='styles/styles.css') }}">
+  <script type='text/javascript' src="{{ url_for('static', filename='styles/logic.js') }}"></script>
 </head>
-<body>
-
+<body>>
+  <title>Alzheimer's Information</title>
 <h2>Alzheimer's Information</h2>
 
 <p>Make a selection below to find out more information about Alzheimer's.</p>
@@ -32,16 +21,6 @@
   <br><br>
   <input type="submit" value="Submit">
 </form>
-
-<div id="map"></div>
-
-<!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-
-<script type='text/javascript' src="static/styles/logic.js"></script>
-<!--<p>Click the "Submit" button and the form-data will appear</p>-->    
-
+<!--p>Click the "Submit" button and the form-data will appear</p>-->    
 </body>
 </html>

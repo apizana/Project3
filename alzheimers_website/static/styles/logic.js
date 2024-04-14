@@ -1,26 +1,15 @@
 // Create a map object.
-console.log("working")
+let myMap = L.map("map", {
+  center: [37.09, -95.71],
+  zoom: 5
+});
+myMap.addTo(map)
 
 // Add a tile layer.
 var myMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
-var myMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-});
-
-// base layer
-var myMap = L.map("map", {
-  center: [37.09, -95.71],
-  zoom: 5,
-  layers:[myMap]
-});
-myMap.addTo(map)
-// console.log()
-var baseMaps ={
-    "Basic Map": myMap
-};
 // An array containing each city's name, location, and population
 let cities = [{
   location: [],
