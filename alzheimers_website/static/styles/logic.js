@@ -11,7 +11,7 @@ var myMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 });
 
 // base layer
-let myMap = L.map("map", {
+var myMap = L.map("map", {
   center: [37.09, -95.71],
   zoom: 5,
   layers:[myMap]
@@ -21,7 +21,6 @@ myMap.addTo(map)
 var baseMaps ={
     "Basic Map": myMap
 };
-myMap
 // An array containing each city's name, location, and population
 let cities = [{
   location: [],
