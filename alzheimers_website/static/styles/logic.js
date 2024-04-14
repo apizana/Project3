@@ -11,7 +11,7 @@ var myMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 });
 
 // base layer
-var myMap = L.map("map", {
+let myMap = L.map("map", {
   center: [37.09, -95.71],
   zoom: 5,
   layers:[myMap]
@@ -23,7 +23,7 @@ var baseMaps ={
 };
 myMap
 // An array containing each city's name, location, and population
-let map = [{
+let cities = [{
   location: [],
   name: "Abilene",
   population: 8550405
