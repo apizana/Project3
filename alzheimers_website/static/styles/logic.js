@@ -16,12 +16,12 @@ var myMap = L.map("map", {
   zoom: 5,
   layers:[myMap]
 });
-
+myMap.addTo(map)
 // console.log()
 var baseMaps ={
     "Basic Map": myMap
 };
-
+myMap
 // An array containing each city's name, location, and population
 let cities = [{
   location: [],
