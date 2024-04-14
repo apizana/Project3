@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
   <link rel="stylesheet" type= "text/css"  href= "{{ url_for('static',filename='styles/styles.css') }}">
+  <script type='text/javascript' src="{{ url_for('static', filename='styles/logic.js') }}"></script>
 </head>
 <body>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <input type="text" placeholder="Search..">
-</div>
 
 <h2>Alzheimer's Information</h2>
 
@@ -28,6 +26,9 @@
   <input type="submit" value="Submit">
 </form>
 
+<div id="map"></div>
+
+<script type='text/javascript' src="{{ url_for('static', filename='styles/logic.js') }}"></script>
 <!--<p>Click the "Submit" button and the form-data will appear</p>-->
 
 </body>
