@@ -146,197 +146,161 @@ let cities = [{
   website: "https://lcca.com/locations/tx/gt-fort-worth/"
 },
 {
-  location: [],
-  name: "Gunter",
-  population: 2296224
+  location: [29.5141376, -98.3793664],
+  name: "Gunter TX - Texas Alzheimer's facilities -- Hilltop Haven",
+  website: "https://www.aplaceformom.com/community/hilltop-haven-50398"
 },
 {
-  location: [],
-  name: "Houston",
-  population: 3971883
+  location: [29.7609196, -95.6282567],
+  name: "Houston TX - Texas dementia facilities -- Park Way Place",
+  website: "https://bucknerparkwayplace.org"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Houston",
-  population: 446599
+  location: [29.7539, -95.574748],
+  name: "Houston TX - Texas short-term memory facilities -- Memorial Oaks",
+  website: "https://www.brookdale.com/en/communities/brookdale-memorial-oaks.html?cid=yext"
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Houston",
-  population: 3971883
+  location: [29.9210368, -95.6288881],
+  name: "Houston TX - Texas Alzheimer's facilities -- Right At Home",
+  website: "https://www.rightathome.net/northwest-houston"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Houston",
-  population: 446599
+  location: [41.8781, -87.6298],
+  name: "Houston TX - Texas dementia facilities -- Colonial Oaks Assisted Living & Alzhemers Care",
+  website: "https://colonialoaks.com/"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Houston",
-  population: 446599
+  location: [29.7417779, -95.5152329],
+  name: "Houston TX - Texas short-term memory facilities -- The Buckingham",
+  website: "https://www.buckinghamhouston.com/"
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Irving",
-  population: 3971883
+  location: [32.8347731,-96.9472847],
+  name: "Irving TX - Texas Alzheimer's facilities -- Ashford Hall Nursing Home",
+  website: "https://ashfordhall.com/"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Katy",
-  population: 446599
+  location: [29.778451,-95.74634],
+  name: "Katy TX - Texas dementia facilities -- Colonial Oaks Assisted Living & Alzheimers Care",
+  website: "https://www.reserveatkaty.com/"
 },
 {
-  location: [29.7604, -95.3698],
-  name: "Laredo",
-  population: 2296224
+  location: [27.5515748,-99.4946408],
+  name: "Laredo TX - Texas short-term memory facilities -- Laredo Elderly Service",
+  website: ""
 },
 {
-  location: [34.0522, -118.2437],
-  name: "League City",
-  population: 3971883
+  location: [29.4967785,-95.1264113],
+  name: "CaLeague City TX - Texas Alzheimer's facilities -- The Cottages At Clear Lakerrolton",
+  website: "https://www.alzcottages.com/"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Lubbock",
-  population: 446599
+  location: [33.5933456,-101.8933769],
+  name: "Lubbock TX - Texas dementia facilities -- Garrison Geriatric Educ. and Care Center",
+  website: "https://garrisongecc.com/" 
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Lubbock",
-  population: 3971883
+  location: [33.174926,-96.635696],
+  name: "Mckinney TX - Texas Alzheimer's facilities -- Provident Living Centers of McKinney",
+  website: ""
 },
 {
-  location: [29.7604, -95.3698],
-  name: "Mckinney",
-  population: 2296224
+  location: [32.8353134,-96.6132037],
+  name: "Mesquite TX - Texas dementia facilities -- Courtyard The at Christian Care Center",
+  website: "https://www.christiancaretexas.org/cccs-mesquite/"
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Mesquite",
-  population: 3971883
+  location: [26.172405,-98.073141],
+  name: "Mission TX - Texas short-term memory facilities -- The Bridges at Mission",
+  population: "https://thebridgesatmission.com/"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Mission",
-  population: 446599
+  location: [32.8455892,-97.2018382],
+  name: "North Richland Hills TX - Texas dementia facilities -- Clare Bridge of Richland Hills",
+  website: "https://www.brookdale.com/en/communities/brookdale-north-richland-hills.html?cid=yext"
 },
 {
-  location: [34.0522, -118.2437],
-  name: "New Braunfuls",
-  population: 3971883
+  location: [33.0184363,-96.7696076],
+  name: "Plano TX - Texas Alzheimer's facilities -- Collin Oaks",
+  website: "https://www.brookdale.com/en/communities/brookdale-collin-oaks.html?cid=yext"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "North Richland Hills",
-  population: 446599
+  location: [32.9338719,-96.7308903],
+  name: "Richardson TX - Texas dementia facilities -- Arden Courts Alzheimer's Assisted Living",
+  website: "https://arden-courts.org/Richardson?utm_source=google&utm_medium=organic&utm_campaign=gmb&cid=18608"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Plano",
-  population: 446599
+  location: [30.5658723,-97.6480956],
+  name: "DaRound Rock TX - Texas short-term memory facilities -- Cottages Alzheimer Care",
+  website: "https://www.alzcottages.com/project/chandler-creek/"
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Plano",
-  population: 3971883
+  location: [29.5736271,-98.378409],
+  name: "San Antonio TX - Texas dementia facilities -- Clare Bridge of San Antonio",
+  website: N/A
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Richardson",
-  population: 446599
+  location: [29.5959242,-98.4733984],
+  name: "San Antonio TX - Texas short-term memory facilities -- Village Oaks at Hollywood Park",
+  website:  N/A
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Round Rock",
-  population: 3971883
+  location: [29.5171011,-98.5918148],
+  name: "San Antonio TX - Texas Alzheimer's facilities -- Hamilton House",
+  website: N/A
 },
 {
-  location: [41.2524, -95.9980],
-  name: "San Antonio",
-  population: 446599
+  location: [29.5265895,-98.5765939],
+  name: "San Antonio TX - Texas dementia facilities -- Woodbridge Estates",
+  website: N/A
 },
 {
-  location: [29.7604, -95.3698],
-  name: "San Antonio",
-  population: 2296224
+  location: [29.5638357,-97.9468321],
+  name: "ESeguin TX - Texas short-term memory facilities -- Guadalupe Valley Nursing Centerl Paso",
+  website: N/A
 },
 {
-  location: [34.0522, -118.2437],
-  name: "San Antonio",
-  population: 3971883
+  location: [29.5949399,-95.6039886],
+  name: "Sugar Land TX - Texas Alzheimer's facilities -- Barton House",
+  website: "https://barton-house.com/"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "San Antonio",
-  population: 446599
+  location: [33.462016,-94.0478413],
+  name: "Texarkana TX - Texas dementia facilities -- Alzheimer's Association Greater",
+  website: "https://www.alztristate.org/"
 },
 {
-  location: [34.0522, -118.2437],
-  name: "San Antonio",
-  population: 3971883
+  location: [34.157621,-99.313749],
+  name: "Vernon TX - Texas Alzheimer's facilities -- Vernon Care Center",
+  website: N/A
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Seguin",
-  population: 3971883
+  location: [31.591322,-97.153048],
+  name: "Waco TX - Texas short-term memory facilities -- Meadowlands Terrace",
+  website: "https://seniorcarehomes.com/assisted-living-facilities/texas/waco/brookdale-meadowlands-terrace/"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Sugar Land",
-  population: 446599
+  location: [32.264273,-95.255596],
+  name: "Whitehouse TX - Texas dementia facilities -- Tender Loving Elderly Care",
+  website: N/A
 },
 {
-  location: [29.7604, -95.3698],
-  name: "Texarkana",
-  population: 2296224
+  location: [33.8671579,-98.5247827],
+  name: "Wichita Falls TX - Texas short-term memory facilities -- Lakeridge Place",
+  website: N/A
 },
 {
-  location: [34.0522, -118.2437],
-  name: "Texas City",
-  population: 3971883
+  location: [33.943784,-98.523064],
+  name: "Wichita Falls TX - Texas Alzheimer's facilities -- Texhoma Christian Care Center",
+  website: "https://texhomachristiancare.com/"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Vernon",
-  population: 446599
-},
-{
-  location: [34.0522, -118.2437],
-  name: "Victoria",
-  population: 3971883
-},
-{
-  location: [29.7604, -95.3698],
-  name: "Waco",
-  population: 2296224
-},
-{
-  location: [41.2524, -95.9980],
-  name: "Waxahachie",
-  population: 446599
-},
-{
-  location: [29.7604, -95.3698],
-  name: "Whitehouse",
-  population: 2296224
-},
-{
-  location: [34.0522, -118.2437],
-  name: "Wichita Falls",
-  population: 3971883
-},
-{
-  location: [41.2524, -95.9980],
-  name: "Wichita Falls",
-  population: 446599
-},
-{
-  location: [34.0522, -118.2437],
-  name: "Wichita Falls",
-  population: 3971883
+  location: [33.9051039,-98.5359429],
+  name: "Wichita Falls TX - Texas dementia facilities -- Alzheimer's Diagnostic Clinic",
+  website: "https://npidb.org/organizations/agencies/community-behavioral-health_251s00000x/1154538429.aspx"
 },
 ];
-
 // Looping through the cities array, create one marker for each city, bind a popup containing its name and population, and add it to the map.
 for (let i = 0; i < cities.length; i++) {
   let city = cities[i];
