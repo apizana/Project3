@@ -10,7 +10,7 @@ Alzheimer’s Disease is one of the most common forms of dementia. Affecting ove
 # Process
 In order to create our web visiualization we had to first clean up the data we found. We utilized Python code in a Jupyter Notebook to read our csv file and clean up our data before we could build our visualizations. 
 The Python code was used to dismiss columns such as: ‘StratificationCategoryID1’, ‘YearEnd’, ‘LocationAbbr’, ‘Topic’, ‘Datasource’, ‘DataValueTypeID’, ‘Data_Value_Footnote_Symbol’, ‘StratificationCategory1’, ‘ClassID’, ‘TopicID’, ‘QuestionID’, ‘LocationID’, ‘RowId’, ‘StratificationID1’, ‘StratificationID2’, ‘Data_Value_Unit’, ‘Data_Value_Type’, ‘Latitude’, ‘Longitude’, ‘Data_Value_Alt’, ‘StratificationCategory2’, and ‘StratificationCategoryID2’.
-We also renamed columns: {‘Stratification1’: ‘Age Group’}, {‘YearStart’: ‘Year’}, {‘Stratification2’: ‘Gender or Race/Ethnicity’}. 
+We also renamed columns: {‘Stratification1’: ‘Age Group’}, {‘YearStart’: ‘Year’}, {‘Stratification2’: ‘Gender or Race/Ethnicity’}. After cleaning our data we created a Mongo database.
 
 We then started working on our CSS and JavaScript leaflet map visualization where we found a website with all locations of memory care facilities in Texas. From there we found the longtitude and lattude of each location and implemented it into the code as well as the website to the facility. The Leaflet map shows each location and if you hit the marker it will show you the name and website you can visit. 
 
