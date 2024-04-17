@@ -30,6 +30,7 @@ Where is Alzheimer’s disease treated?​
 # Conclusion
 
 # How to use:
+To access and utilize our Alzheimer's Disease Information Dashboard, simply follow the link http://127.0.0.1:5500/alzheimers_website/templates/index.html# 
 
 # Sources 
 https://nccd.cdc.gov/aging_data/rdPage.aspx?rdReport=DPH_HAP.ExploreByLocation&rdRequestForwarding=Form
