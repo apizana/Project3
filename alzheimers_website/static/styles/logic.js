@@ -1,14 +1,76 @@
+const url = "../static/styles/AlzheimersDB.Question_Data.json"
 
-var globalData = [];
+function init() {
+  var dropDown = d3.select("#selDataset");
+  // retrieve JSON data
+  d3.json(url).then(function (data) {
+      var sampleId = data.names;
+      sampleId.array((sample) => {
+          dropDown.append("option").text(sample).property("value", sample)
+      });
+      var initSample = sampleId[0];
+      buildDemo(initSample);
+      buildCharts(initSample);
+  });
+};
 
-d3.json("/api/data").then(data => init(data));
+// build function to create charts 
+function buildCharts(sample) {
+  d3.json(url).then(function (data) {
+      // variables for charts
+      var allSamples = data.samples;
+      var sampleInfo = allSamples.filter(row => row.id == sample);
+      var sampleValues = sampleInfo[0].sample_values;
+      var sampleValuesSlice = sampleValues.slice(0,10).reverse();
+      var otuIds = sampleInfo[0].otu_ids;
+      var otuIdsSlice = otuIds.slice(0,10).reverse();
+      var otuLabels = sampleInfo[0].otu_labels;
+      var otuLabelsSlice = otuLabels.slice(0,10).reverse();
+      var metaData = data.metadata;
+      var metaDataSample = metaData.filter(row => row.id == sample);
+      var wash = metaDataSample[0].wfreq;
 
-function init(data){
-  console.log(data);
-  globalData.push(data);
+            // build chart 1
+            var trace1 = {
+              x: sampleValuesSlice,
+              y: otuIdsSlice.map(item => `OTU ${item}`),
+              type: "bar",
+              orientation: "h",
+              text: otuLabelsSlice,
+          };
+          var data = [trace1];
+          Plotly.newPlot("bar", data)
+  
+          // build chart 2 
+          var trace2 = {
+              x: otuIds,
+              y: sampleValues,
+              mode: "markers",
+              marker: {
+                  size: sampleValues,
+                  color: otuIds,
+                  colorscale: "Earth"
+              },
+              text: otuIds
+          };
+          var data2 = [trace2];
+          var layout = {
+              showlegend: false
+          };
+  
+          Plotly.newPlot("bubble", data2, layout);
+        });
+      };
+init(); 
+//var globalData = [];
 
-}
+//d3.json("/api/data").then(data => init(data));
 
+//function init(data){
+  //console.log(data);
+  //globalData.push(data);
+//}
+  
 let myMap = L.map("map", {
   center: [37.09, -95.71],
   zoom: 5
@@ -317,5 +379,4 @@ for (let i = 0; i < cities.length; i++) {
   L.marker(city.location)
   .bindPopup(`<h1>${city.name}</h1> <hr> <h3>Website <a href="${city.website}" target="_blank">${city.website}<\a></h3>`)
     .addTo(myMap);
-}
- 
+} 
