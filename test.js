@@ -1,13 +1,17 @@
-var xmlhttp = new XMLHttpRequest();
-var url = "http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json";
-xmlhttp.open("GET",url,true);
-xmlhttp.send();
-xmlhttp.onreadystatechange = function(){
-    if(this.readyState == 4 && this.status == 200){
-        var data = JSON.parse(this.responseText);
-        console.log(data)
-    }
-  }
+
+fetch("http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+// Path: app.js
+// Define the URL for the JSON data
+const url = "http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json";
+
 // initialize function to pull ID numbers
 function init() {
   var dropDown = d3.select("#selDataset");

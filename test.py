@@ -24,7 +24,7 @@ def index():
 @app.route('/api/data')
 def getData():
 
-    data = [item for item in mongo.db.Question_Data.find({"LocationDesc": "Wyoming"}, {"_id": 0})]
+    data = [item for item in mongo.db.Question_Data.find({"LocationDesc": "Texas"}, {"_id": 0})]
 
     print(data)
 
