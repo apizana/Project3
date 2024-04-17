@@ -27,6 +27,9 @@ https://www.caretexas.net/list02_Texas_Alzheimers_facilities.htm
 
 # Team Members: 
 Caleb O'Kane
+
 Esteban Quintanilla
+
 Adriana Pizana
+
 Amanda Garza
