@@ -32,7 +32,7 @@ Where is Alzheimer’s disease treated?​
 # How to use:
 To access and utilize our Alzheimer's Disease Information Dashboard, simply follow the link http://127.0.0.1:5500/alzheimers_website/templates/index.html# 
 
-#Select a marker for location information and respective link
+# Select a marker for location information and respective link
 ![](https://github.com/apizana/Project3/blob/main/GIF%20for%20demo/Mapdemo.gif)
 
 # Sources 
