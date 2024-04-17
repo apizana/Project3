@@ -1,50 +1,3 @@
-//json url
-const url = "https://Resources/OldFiles/AlzheimersDB.Questions_Data_1stHalf.json"
-
-// initialize function
-function init() {
-  var dropDown = d3.select("#selDataset");
-  // retrieve JSON data
-  d3.json(url).then(function (data) {
-      var sampleId = data.names;
-      sampleId.forEach((sample) => {
-          dropDown.append("option").text(sample).property("value", sample)
-      });
-      var initSample = sampleId[0];
-      buildDemo(initSample);
-      buildCharts(initSample);
-  });
-};
-
-// build function to create charts 
-function buildCharts(sample) {
-  d3.json(url).then(function (data) {
-      // variables for charts
-      var allSamples = data.samples;
-      var sampleInfo = allSamples.filter(row => row.id == sample);
-      var sampleValues = sampleInfo[0].sample_values;
-      var sampleValuesSlice = sampleValues.slice(0,10).reverse();
-      var otuIds = sampleInfo[0].otu_ids;
-      var otuIdsSlice = otuIds.slice(0,10).reverse();
-      var otuLabels = sampleInfo[0].otu_labels;
-      var otuLabelsSlice = otuLabels.slice(0,10).reverse();
-      var metaData = data.metadata;
-      var metaDataSample = metaData.filter(row => row.id == sample);
-      var wash = metaDataSample[0].wfreq;
-
-      // build chart 1
-      var trace1 = {
-          x: sampleValuesSlice,
-          y: otuIdsSlice.map(item => `OTU ${item}`),
-          type: "bar",
-          orientation: "h",
-          text: otuLabelsSlice,
-      };
-      var data = [trace1];
-      Plotly.newPlot("bar", data);
-    });
-  };
-init();
 
 let myMap = L.map("map", {
   center: [37.09, -95.71],
@@ -355,3 +308,5 @@ for (let i = 0; i < cities.length; i++) {
   .bindPopup(`<h1>${city.name}</h1> <hr> <h3>Website <a href="${city.website}" target="_blank">${city.website}<\a></h3>`)
     .addTo(myMap);
 } 
+
+
