@@ -17,6 +17,15 @@ We then started working on our CSS and JavaScript leaflet map visualization wher
 Our last step was to create a index html where we referenced the css file and the javascript file, within the javascipt we then added the leaflet css and leaflet javascript to create our map of memory care locations in Texas. We then used our data we cleaned to input a bar graph for the age of people who have developed Alzheimers and location. 
 
 # Analysis
+How many people have Alzheimer’s disease?​
+
+What is the age of most people with Alzheimer’s disease?​
+
+Do men or women have a higher risk of developing Alzheimer’s disease?​
+
+What location has the most people with Alzheimer’s disease?​
+
+Where is Alzheimer’s disease treated?​
 
 # Conclusion
 
