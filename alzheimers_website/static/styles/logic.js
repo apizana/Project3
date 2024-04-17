@@ -1,4 +1,14 @@
-// Create a map object.
+
+var globalData = [];
+
+d3.json("/api/data").then(data => init(data));
+
+function init(data){
+  console.log(data);
+  globalData.push(data);
+
+}
+
 let myMap = L.map("map", {
   center: [37.09, -95.71],
   zoom: 5
@@ -308,3 +318,4 @@ for (let i = 0; i < cities.length; i++) {
   .bindPopup(`<h1>${city.name}</h1> <hr> <h3>Website <a href="${city.website}" target="_blank">${city.website}<\a></h3>`)
     .addTo(myMap);
 }
+ 
