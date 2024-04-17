@@ -50,6 +50,13 @@ body {
     color: #f1f1f1;
   }
 
+  p {
+    text-align: center;
+    margin: 25px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f1f1f1;
+  }
+
   .footer {
     background-color: #f1f1f1;
     padding: 10px;
