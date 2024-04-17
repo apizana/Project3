@@ -1,3 +1,14 @@
+var xmlhttp = new XMLHttpRequest();
+var url = "http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json";
+xmlhttp.open("GET",url,true);
+xmlhttp.send();
+xmlhttp.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+        var data = JSON.parse(this.responseText);
+        console.log(data)
+    }
+  }
+
 
 let myMap = L.map("map", {
   center: [37.09, -95.71],

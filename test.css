@@ -1,25 +1,28 @@
-body
-{
-	margin: 0;
-	padding: 0;
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
 body{
-	font-family: sans-serif;
+	font-family: arial;
+	font-size: 16px;
+	margin: 0;
+	background: #fff;
+	color: #000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	min-height: 100vh;
-	color: #555;
-	background-color: #fff;
 }
-.chart{
-	max-width: 900px;
-	height: 450px;
-	padding: 50px;
-	margin: 0 auto;
+
+.container{
+	width: 70%;
 }
-.chart .chart_types{
+h1{
+	font-size: 46px;
 	text-align: center;
-	margin-bottom: 30px;
 }
-.chart .chart_types button{
-	padding: 10px 25px;
+#canvas{
+	width: 100%;
 }
