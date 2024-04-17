@@ -20,12 +20,11 @@ Our last step was to create a index html where we referenced the css file and th
 
 # Conclusion
 
+# How to use:
 
 # Sources 
 https://nccd.cdc.gov/aging_data/rdPage.aspx?rdReport=DPH_HAP.ExploreByLocation&rdRequestForwarding=Form
 https://www.caretexas.net/list02_Texas_Alzheimers_facilities.htm
-
-# How to use:
 
 # Team Members: 
 Caleb O'Kane
