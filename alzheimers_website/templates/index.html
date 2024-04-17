@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html>  
 <head>
   <link rel="stylesheet" type= "text/css"  href= "../static/styles/styles.css">
 
   <!--<script type='text/javascript' src="{{ url_for('static', filename='styles/logic.js') }}"></script>-->
+  
+  <title>Alzheimer's Information</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <title>Alzheimer's Information</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
   <div class="topnav">
     <a href="#">Home</a>
   </div>
   <!--<p id=""demo">Project 3.</p>-->
-  
-  <div class="content">
-    <style>
-      body {
-        background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
-        min-height: 100%;
-        background-position: center;
-        background-size: cover;
-      }
-      </style>
+
   <h1>Alzheimer's Disease Information</h1>
       <p>This Alzheimer's Disease Dashboard provides an interactive way to get location 
         information of various clinics that can assist with diagnosis and treatments. It also provides statistcs of 
         different factors that can affect those previously undiagnosed or untreated.</p>
-    <h2>Alzheimer's Disease Care Facilities in Texas</h2>
-    <meta charset="utf-8">
+
+  <h2>Alzheimer's Disease Care Facilities in Texas</h2>
     <title>Basic Map</title>
   
     <!-- Leaflet CSS -->
@@ -53,6 +48,41 @@
   
     <!-- JavaScript file -->
     <script type='text/javascript' src="../static/styles/logic.js"></script>
+
+    <style>
+      body {
+        background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      </style>
+    
+    <div class="container">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="card card-body bg-light">
+        <h6>Test Subject ID No.:</h6>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      </div>
+      <div class="card card-primary">
+        <div class="card-header">
+          <h4 class="card-title">Demographic Info</h4>
+        </div>
+        <div id="sample-metadata" class="card-body"></div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div id="bar"></div>
+    </div>
+  </div>
+</div>
+
+<script src="../static/styles/logic.js"></script>
+<div class="content">
   </body>
   <div class="footer">
     <p>© Created by Project 3 Group 1</p>

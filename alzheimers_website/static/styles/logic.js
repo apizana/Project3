@@ -1,11 +1,13 @@
-const url = "../static/styles/AlzheimersDB.Question_Data.json"
+//json url
+const url = "https://Resources/OldFiles/AlzheimersDB.Questions_Data_1stHalf.json"
 
+// initialize function
 function init() {
   var dropDown = d3.select("#selDataset");
   // retrieve JSON data
   d3.json(url).then(function (data) {
       var sampleId = data.names;
-      sampleId.array((sample) => {
+      sampleId.forEach((sample) => {
           dropDown.append("option").text(sample).property("value", sample)
       });
       var initSample = sampleId[0];
@@ -30,47 +32,20 @@ function buildCharts(sample) {
       var metaDataSample = metaData.filter(row => row.id == sample);
       var wash = metaDataSample[0].wfreq;
 
-            // build chart 1
-            var trace1 = {
-              x: sampleValuesSlice,
-              y: otuIdsSlice.map(item => `OTU ${item}`),
-              type: "bar",
-              orientation: "h",
-              text: otuLabelsSlice,
-          };
-          var data = [trace1];
-          Plotly.newPlot("bar", data)
-  
-          // build chart 2 
-          var trace2 = {
-              x: otuIds,
-              y: sampleValues,
-              mode: "markers",
-              marker: {
-                  size: sampleValues,
-                  color: otuIds,
-                  colorscale: "Earth"
-              },
-              text: otuIds
-          };
-          var data2 = [trace2];
-          var layout = {
-              showlegend: false
-          };
-  
-          Plotly.newPlot("bubble", data2, layout);
-        });
+      // build chart 1
+      var trace1 = {
+          x: sampleValuesSlice,
+          y: otuIdsSlice.map(item => `OTU ${item}`),
+          type: "bar",
+          orientation: "h",
+          text: otuLabelsSlice,
       };
-init(); 
-//var globalData = [];
+      var data = [trace1];
+      Plotly.newPlot("bar", data);
+    });
+  };
+init();
 
-//d3.json("/api/data").then(data => init(data));
-
-//function init(data){
-  //console.log(data);
-  //globalData.push(data);
-//}
-  
 let myMap = L.map("map", {
   center: [37.09, -95.71],
   zoom: 5
