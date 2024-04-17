@@ -2,15 +2,31 @@
 <html>
 <head>
   <link rel="stylesheet" type= "text/css"  href= "../static/styles/styles.css">
+
   <!--<script type='text/javascript' src="{{ url_for('static', filename='styles/logic.js') }}"></script>-->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <title>Alzheimer's Information</title>
+
 </head>
 <body>
-  <p id=""demo">Project 3.</p>
-
+  <div class="topnav">
+    <a href="#">Home</a>
+  </div>
+  <!--<p id=""demo">Project 3.</p>-->
+  
+  <div class="content">
+    <style>
+      body {
+        background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      </style>
   <h1>Alzheimer's Disease Information</h1>
-
+      <p>This Alzheimer's Disease Dashboard provides an interactive way to get location 
+        information of various clinics that can assist with diagnosis and treatments. It also provides statistcs of 
+        different factors that can affect those previously undiagnosed or untreated.</p>
     <h2>Alzheimer's Disease Care Facilities in Texas</h2>
     <meta charset="utf-8">
     <title>Basic Map</title>
@@ -27,14 +43,17 @@
   
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
+  </div>
   </head>
   
   <body>
     <!-- The div where we'll insert our map -->
-    <div id="map"></div>
+    <div id="map" style="width: 720px; height: 75%; padding:10px; border: 60px; margin:auto"></div>
   
     <!-- JavaScript file -->
     <script type='text/javascript' src="../static/styles/logic.js"></script>
   </body>
-  
+  <div class="footer">
+    <p>© Created by Project 3 Group 1</p>
+  </div>
   </html>
