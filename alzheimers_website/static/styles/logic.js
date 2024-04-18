@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json";
+var url = "http://127.0.0.1:5500/Resources/AlzheimersDB.json";
 xmlhttp.open("GET",url,true);
 xmlhttp.send();
 xmlhttp.onreadystatechange = function(){

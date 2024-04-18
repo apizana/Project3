@@ -1,5 +1,5 @@
 
-fetch("http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json")
+fetch("http://127.0.0.1:5500/Resources/AlzheimersDB.json")
   .then(response => response.json())
   .then(data => {
     console.log(data);
@@ -10,14 +10,14 @@ fetch("http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json"
 
 // Path: app.js
 // Define the URL for the JSON data
-const url = "http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json";
+const url = "http://127.0.0.1:5500/Resources/AlzheimersDB.json";
 function init() {
   let dropDown = d3.select("#selDatabase");
   // retrieve JSON data
   d3.json(url).then((data) => {
     console.log(`Data: ${data}`);
     // array of question names
-    let questions = data.AlzheimersDB.Questions_Data_1stHalf.map(entry => entry.Question);
+    let questions = data.AlzheimersDB.map(entry => entry.Question);
     // Iterate through question names Array
     questions.forEach((question) => {
       // Append each name as an option to the drop down menu
@@ -36,7 +36,7 @@ function init() {
 function buildCharts(question) {
   d3.json(url).then(function (data) {
     // filter data for the selected question
-    var questionData = data.AlzheimersDB.Questions_Data_1stHalf.find(entry => entry.Question === question);
+    var questionData = data.AlzheimersDB.find(entry => entry.Question === question);
     // variables for charts
     var sampleValuesSlice = questionData.sample_values.slice(0, 10).reverse();
     var otuIdsSlice = questionData.otu_ids.slice(0, 10).reverse().map(item => `OTU ${item}`);
