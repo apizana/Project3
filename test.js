@@ -13,16 +13,29 @@ fetch("http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json"
 const url = "http://127.0.0.1:5500/Resources/AlzheimersDB.Questions_Data_1stHalf.json";
 
 function init() {
-  var dropDown = d3.select("#selDatabase");
+  let dropDown = d3.select("#selDatabase");
   // retrieve JSON data
-  d3.json(url).then(function (data) {
-      var sampleId = data.names;
-      sampleId.forEach((sample) => {
-          dropDown.append("option").text(sample).property("value", sample)
-      });
-      var initSample = sampleId[0];
-      buildDemo(initSample);
-      buildCharts(initSample);
+  d3.json(url).then((data) => {
+      console.log(`Data: ${data}`);
+
+        // array of id names
+        let names = data.Question;
+
+        // Iterate through names Array
+        names.forEach((Question) => {
+            // Append each name as an option to the drop down menu
+            // This is adding each name to the html file as an option element with value = a name in the names array
+            dropdownMenu.append("option").text(Question).property("value", Question);
+        });
+
+        // Assign first name to name variable
+        let name = Question[0];
+
+        // Call the functions to make demographic panel, bar chart, and bubble chart
+        demo(Question);
+        bar(Question);
+        bubble(Question);
+        gauge(Question);
   });
 };
 
