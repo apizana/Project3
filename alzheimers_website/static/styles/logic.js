@@ -8,41 +8,7 @@ xmlhttp.onreadystatechange = function(){
         console.log(data)
     }
   }
-// initialize function to pull ID numbers
-function init() {
-  var dropDown = d3.select("#selDataset");
-  // retrieve JSON data
-  d3.json(url).then(function (data) {
-    var sampleId = data.names;
-    sampleId.forEach((sample) => {
-        dropDown.append("option").text(sample).property("value", sample)
-    });
-    var initSample = sampleId[0];
-    buildDemo(initSample);
-    buildCharts(initSample);
-});
-};
 
-//build demographic info 
-function buildDemo(sample) {
-  var demo = d3.select("#selDataset");
-  d3.json(url).then(function (data) {
-      var metaData = data.metadata;
-      var metaDataSample = metaData.filter(row => row.id == sample);
-      demo.selectAll("p").remove();
-      metaDataSample.forEach((row) => {
-          for (const [key, value] of Object.entries(row)) {
-              demo.append("p").text(`${key}: ${value}`);
-          };
-      });
-  });
-};
-
-// 
-function optionChanged(sample) {
-  buildDemo(sample);
-  buildCharts(sample);
-};
 
 let myMap = L.map("map", {
   center: [37.09, -95.71],
@@ -354,5 +320,5 @@ for (let i = 0; i < cities.length; i++) {
     .addTo(myMap);
 } 
 
-init();
+
 
