@@ -35,6 +35,9 @@ To access and utilize our Alzheimer's Disease Information Dashboard, simply foll
 # Select a marker for location information and respective link
 ![](https://github.com/apizana/Project3/blob/main/GIF%20for%20demo/Mapdemo.gif)
 
+# Future applications 
+Future applications within this dashboard will included a dropdown menu that will help users to navigate towards information and statistics such as what age group is most affected or what kind of medical history is most affected by this disease. 
+
 # Sources 
 https://nccd.cdc.gov/aging_data/rdPage.aspx?rdReport=DPH_HAP.ExploreByLocation&rdRequestForwarding=Form
 https://www.caretexas.net/list02_Texas_Alzheimers_facilities.htm
